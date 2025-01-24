@@ -127,6 +127,7 @@ img {
 .site-header-hero-wrapper {
   background-color: #f3d7b7;
   background-image: url(../img/site-header-intro-bg.jpg);
+  margin-bottom: 20px;
 }
 
 /* SITE-HEADER */
@@ -186,8 +187,6 @@ img {
 }
 
 /* HERO */
-.hero {
-}
 .hero-container {
   display: flex;
   padding-left: 0;
@@ -225,6 +224,70 @@ img {
 .hero-img-index {
   height: 696px;
 }
+
+/* INDEX-COLLECTION */
+.index-collection-inner {
+  padding: 50px 143px;
+  background-color: #f8f8f2;
+  background-image: url("../img/index-collection-bg.jpg");
+}
+.index-collection-heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 50px;
+  line-height: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+.index-collection-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+.index-collection-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/*
+.index-collection-item:nth-child(odd) {
+  padding-left: 117px;
+}
+.index-collection-item:nth-child(even) {
+  padding-right: 117px;
+}
+*/
+.index-collection-img {
+  flex-shrink: 0;
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
+}
+.index-collection-info {
+  flex-grow: 1;
+  padding-left: 117px;
+  padding-right: 117px;
+}
+.index-collection-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.index-collection-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 34px;
+}
+.index-collection-text:not(:last-child) {
+  margin-bottom: 10px;
+}
 /* RETINA */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -234,7 +297,10 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
- .site-header-hero-wrapper {
+.site-header-hero-wrapper {
   background-image: url("../img/site-header-intro-bg@2x.jpg");
+  }
+  .index-collection-inner {
+    background-image: url("../img/index-collection-bg@2x.jpg");
   }
 }
